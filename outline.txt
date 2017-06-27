@@ -1,0 +1,61 @@
+VALA Tech Camp 
+2 hour
+Intro to Python 
+by Noon and Gala
+
+
+I. Introduction
+A. Set up (~10 min - max)
+ - Who is Noon? Who is Gala?
+ - Why are you teaching me Python? (OQ1)
+ - How will we be using Python today (OQ1)
+
+B. Background knowledge (~10 min - max)
+ - [IC] Types  (Q2)
+ - [IC] Objects (Q2, S1) 
+
+C. Basics (~40 min - max) (S1)
+ - simple functions: add, subtract, multiply, divide
+ - user defined functions
+ - lists
+ - dictionaries
+ - If (and/or)
+ - Loops
+
+ II. A special library: Pandas
+ A. Background (Q3)
+ - Libraries - what are they? 
+ - Importing and using a library (S2)
+
+ B. Using Pandas too look at data
+ - Read and write a file
+ - Pandas basics
+    - series
+    - dataframe
+        - Understanding columns as series
+    - explore a dataframe
+        - shape, columns,
+        - unique(), dropna(), fillna()
+- Pandas to do useful things
+    - Add a simple column
+        - As a new thing
+        - As a sum/subtract
+    - Group data
+        - Handle multi-index
+        - Transpose
+        - Pivot
+    - Locate particular data
+        - By index
+        - By filter
+    - Use Pandas predefined functions
+        - sum(), count(), description()
+        - functions that return True/False <can't remember one right now?>
+    - Apply a function to a column
+        - *Using a lambda function
+        - Using a predefined function
+C. Crazy fun with Pandas**
+- 
+
+
+
+
