@@ -13,5 +13,5 @@ Statements --
     3.3) Group data
     3.4) Investigate data
     3.5) Add simple information (colums) to the data
-    3.5*) Link data
-    3.6*) Add complex information (from different locations) to the data
+    3.6*) Link data
+    3.7*) Add complex information (from different locations) to the data
