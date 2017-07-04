@@ -1,0 +1,19 @@
+startshape box
+ 
+
+rule box {
+	CIRCLE []
+	box [s .5 b 0.1 x -0.5]
+	box [s .5 b 0.15 x  0.5]
+	box [s .5 b 0.1	5 y  0.5]
+}
+
+rule box {
+	CIRCLE []
+	box [x .011 y .011]
+}
+
+rule box {
+	CIRCLE []
+	box [f 40]
+}

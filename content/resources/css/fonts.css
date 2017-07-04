@@ -1,0 +1,50 @@
+html, body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'bebasneue';
+    src: url('../fonts/bebasneue/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue/bebasneue-webfont.eot?#iefix')    format('embedded-opentype'),
+         url('../fonts/bebasneue/bebasneue-webfont.woff')          format('woff'),
+         url('../fonts/bebasneue/bebasneue-webfont.ttf')           format('truetype'),
+         url('../fonts/bebasneue/bebasneue-webfont.svg#bebasneue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jura';
+    src: url('../fonts/jura/jura-regular-webfont.eot');
+    src: url('../fonts/jura/jura-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jura/jura-regular-webfont.woff') format('woff'),
+         url('../fonts/jura/jura-regular-webfont.ttf') format('truetype'),
+         url('../fonts/jura/jura-regular-webfont.svg#bebasneue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.3em; }
+
+h1, h1 *, h2, h2 * { font-family: bebasneue; }
+
+*:before { font-weight: bold; }
+
+* {
+  font-family: jura;
+  line-height: 1.4;
+}
+
+.footer, .footer *, pre, pre *, code, code *, table, table * {
+  font-family: 'Monaco', courier, monospace;
+  font-size: 14px;
+}
+
+a { color: #33d; }
+
+p code {
+  white-space: nowrap;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>VALA Tech Camp - Introduction to Python</title>
+		<link href="resources/css/styles.css"          rel="stylesheet" type="text/css">
+		<link href="resources/css/toc.css"             rel="stylesheet" type="text/css">
+		<link href="resources/css/fonts.css"           rel="stylesheet" type="text/css">
+		<link href="resources/css/solarized-light.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="">
+		<div id="content">
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<h1 id="vala-tech-camp---introduction-to-python">VALA Tech Camp - Introduction To Python</h1>
+<div class="center important">
+<p>A workshop intended to introduce Python to people who are new to programming!</p>
+</div>
+<div class="important">
+<pre class="note notitle"><code>Press &quot;t&quot; to toggle showing the table of contents</code></pre>
+</div>
+<!--
+<div class="center nopad"> ![Workshop](resources/images/altnet.png) </div>
+-->
+<h3 id="objectives">Objectives</h3>
+<p><strong>Concepts</strong></p>
+<ol style="list-style-type: decimal">
+<li>What is Python and what can be done with it?</li>
+<li>What is special about Python as a programming language?</li>
+<li>What are Python libraries?</li>
+</ol>
+<p><strong>Outcomes</strong></p>
+<ol style="list-style-type: decimal">
+<li>I can use Python</li>
+<li>I can read Python documentation</li>
+<li>I can use Pandas to
+<ol style="list-style-type: decimal">
+<li>Read and write data</li>
+<li>Select particular data</li>
+<li>Group data</li>
+<li>Investigate data</li>
+<li>Add simple information (colums) to the data</li>
+<li>Link data*</li>
+<li>Add complex information (from different locations) to the data*</li>
+</ol></li>
+</ol>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="table-of-contents">Table of Contents</h1>
+<div id="toc" class="important">
+<!-- Note: This is a special file that determines the order of the chapters                  -->
+<!--       The lefthand column refers to the filename of the chapter in 'resources/markdown' -->
+<!--       This column is removed before the markdown is processed for the table of contents -->
+<!--       ';' is a comment                                                                  -->
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="#required-resources">Resources</a></td>
+<td align="left">Resources available and required</td>
+<td align="left">1m</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="#welcome">Welcome</a></td>
+<td align="left">Welcome!</td>
+<td align="left">10m</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="#background">Background</a></td>
+<td align="left">Types and objects</td>
+<td align="left">10m</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="#basics">Basics</a></td>
+<td align="left">Basics</td>
+<td align="left">30m</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="#thanks">Thanks</a></td>
+<td align="left">Thanks and goodbye</td>
+<td align="left">5m</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="required-resources">Required Resources</h1>
+<p>We will be using previously set-up computers in the cloud. You have been given a personal URL to use through-out the session.</p>
+<p>At the end of the session we will help you set up Python on your computers.</p>
+<h1 id="other-useful-resources" class="collapse">Other Useful Resources</h1>
+<h3 id="anaconda">Anaconda</h3>
+<h3 id="software-carpentry">Software Carpentry?</h3>
+<h3 id="section">?</h3>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="welcome">Welcome</h1>
+<div class="important">
+<p>Welcome to the Python Workshop!</p>
+<h2 id="about-your-instructors">About Your Instructors</h2>
+<h3 id="gala-noon">Gala &amp; Noon</h3>
+<h2 id="about-you">About You?</h2>
+<h2 id="why-python">Why Python?</h2>
+<p>C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, <span style="color: magenta;"><b>Python</b></span>, R, Ruby, Rust, Scala...</p>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="background">Background</h1>
+<h2 id="types">Types</h2>
+<ul>
+<li>Strings
+<ul>
+<li>Characters</li>
+</ul></li>
+<li>Numbers
+<ul>
+<li>Integers</li>
+<li>Decimals
+<ul>
+<li>Floating Point</li>
+<li>Doubles</li>
+</ul></li>
+</ul></li>
+<li>Lists
+<ul>
+<li>Tuples</li>
+</ul></li>
+<li><code>None</code> Type</li>
+</ul>
+<pre class="instruction"><code>Write some examples of these types into the Jupyter Notebook. 
+
+What happens?</code></pre>
+<pre class="instruction"><code>Make a list of favourite words.</code></pre>
+<h2 id="functions-and-operators">Functions and Operators</h2>
+<h3 id="built-in-functions">Built-In Functions</h3>
+<ul>
+<li><code>min</code></li>
+<li><code>print</code></li>
+<li><code>*</code> and <code>multiply</code></li>
+<li><code>+</code> and <code>add</code></li>
+<li><code>range</code></li>
+<li><code>type</code></li>
+</ul>
+<pre class="instruction"><code>Find the type of: 1</code></pre>
+<pre class="instruction"><code>Find the type of: 1.0</code></pre>
+<pre class="instruction"><code>Find the type of: &quot;Hello, World!&quot;</code></pre>
+<pre class="instruction"><code>Find a new value whose type is one we haven&#39;t seen yet.</code></pre>
+<h2 id="keywords">Keywords</h2>
+<ul>
+<li><code>def</code></li>
+<li><code>while</code></li>
+<li><code>pass</code></li>
+<li><code>in</code></li>
+<li><code>if</code></li>
+<li><code>import</code></li>
+</ul>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="basics">Basics</h1>
+<h3 id="user-defined-functions">User-Defined Functions</h3>
+<h3 id="control-structures">Control Structures</h3>
+<h3 id="looping">Looping</h3>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+<hr />
+<h1 id="thanks">Thanks!</h1>
+<p>We hope you've had a great time today and learned something useful!</p>
+<p>We couldn't have put this together without the help of our volunteers, the venue and food from SEEK, and the Alt .Net Meetup group for inviting everyone along too!</p>
+<p>Thanks a lot for coming along today and if you've developed a taste for Haskell then please consider coming along to the <a href="https://www.meetup.com/Melbourne-Haskell-Users-Group/">Melbourne Haskell User's Group Meetup.</a></p>
+
+</div>
+</div>
+
+
+			<hr>
+			<p class="center footer"> Produced with
+				<a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>
+				- Source on
+				<a href="https://github.com/composeconference/compose_haskell_workshop">GitHub</a>
+			</p>
+		</div>
+		<script type="text/javascript" src="resources/javascript/rainbow-custom.min.js"></script>
+		<script type="text/javascript" src="resources/javascript/answers.js"></script>
+		<script type="text/javascript" src="resources/javascript/collapse.js"></script>
+		<script type="text/javascript" src="resources/javascript/sum_times.js"></script>
+	</body>
+</html>
