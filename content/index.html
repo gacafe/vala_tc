@@ -131,7 +131,10 @@
 <h3 id="gala-noon">Gala &amp; Noon</h3>
 <h2 id="about-you">About You?</h2>
 <h2 id="why-python">Why Python?</h2>
-<p>C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, <span style="color: magenta;"><b>Python</b></span>, R, Ruby, Rust, Scala...</p>
+<!-- C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, Python R, Ruby, Rust, Scala, Python, Python, TypeScript, Swift, Objective-C, PHP, Julia, Cryptol, Bash, Cython, F*, Agda, Mercury, G-Code, Janus, Kaleidoscope, LabVIEW, Matlab, Mathematica, Maple, Perl, Q, R, SQL, Scratch, TeX... -->
+<center>
+<img src="resources/images/WordItOut-word-cloud-2285805.png" />
+</center>
 </div>
 
 </div>
@@ -206,7 +209,69 @@ What happens?</code></pre>
 <hr />
 <h1 id="basics">Basics</h1>
 <h3 id="user-defined-functions">User-Defined Functions</h3>
+<pre data-language="python"><code>def function_name(arguments):
+    # *do something*
+    print(&quot;Hello&quot;)
+    return some_output </code></pre>
+<p>Simple example:</p>
+<p>Define -- A function that takes a number and adds 7</p>
+<pre data-language="python"><code>def seven_up(x):
+    y = x + 7
+    return y </code></pre>
+<p>Use the function --</p>
+<pre data-language="python"><code>&gt; seven_up(5)
+&gt; 12</code></pre>
+<pre class="instruction"><code>
+- Define a function which takes two numbers and adds them together.
+- Define a function which takes a name, such as &quot;Gala&quot; and prints 
+    &gt; &quot;Hello Gala!&quot;
+- Define a function which takes no arguments and always returns 5</code></pre>
+<center>
+worbank: <font color='blue'><b> def return </b></font>
+</center>
 <h3 id="control-structures">Control Structures</h3>
+<h4 id="truefalse-statements">True/False statements</h4>
+<center>
+<code>&lt;, &lt;=, ==, &gt;=, &gt;, !=</code>
+</center>
+<pre data-language="python"><code>&gt; 5==7
+&gt; False
+
+&gt; 5==5
+&gt; True
+
+&gt; 5&gt;=3
+&gt; True
+
+&gt; &quot;Gala&quot;==&quot;gala&quot;
+&gt; False</code></pre>
+<pre class="instruction"><code>
+- Are uppercase letter smaller than, equal to, or larger than lowercase letter. 
+- Can you compare an int and a str?
+- Does order matter when you compare if two lists are equal?
+- What about two tuples?
+- What about two dictionaries?</code></pre>
+<h4 id="ifelse-ifelse">If/Else if/Else</h4>
+<pre data-language="python"><code>if some_statement:
+    # this is the first statement it will try
+    print(&#39;The first statement was true!&#39;)
+elif some_other_statement:
+    # this is the second statement it will try
+    print (&#39;The next statement was true!&#39;)
+else:
+    # this is what it will do if nothing above it was true
+    print(&#39;All stemements were false!&#39;)</code></pre>
+<p>Simple example: If a number is equal to 5:add 2, if a number is smaller than 5: multiply by 2, if a number is larger than 5: divide by 2</p>
+<pre data-language="python"><code>x = 7
+if x==5:
+    y = x+2
+elif x&lt;5:
+    y = x*2
+elif x&gt;5:
+    y = x/2
+print(y)</code></pre>
+<p>Worbank:</p>
+<p><font color='magenta'><b>if elif else and or </b></font></p>
 <h3 id="looping">Looping</h3>
 
 </div>

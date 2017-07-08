@@ -16,6 +16,9 @@ Welcome to the Python Workshop!
 
 ## Why Python?
 
-C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, <span style='color: magenta;'><b>Python</b></span>, R, Ruby, Rust, Scala...
+<!-- C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, Python R, Ruby, Rust, Scala, Python, Python, TypeScript, Swift, Objective-C, PHP, Julia, Cryptol, Bash, Cython, F*, Agda, Mercury, G-Code, Janus, Kaleidoscope, LabVIEW, Matlab, Mathematica, Maple, Perl, Q, R, SQL, Scratch, TeX... -->
+<center>
+![](resources/images/WordItOut-word-cloud-2285805.png)
+</center>
 
 </div>

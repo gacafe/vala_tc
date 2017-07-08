@@ -12,9 +12,10 @@ pre {
     word-wrap: break-word;
     margin: 0px;
     padding: 10px;
-    color: #657b83; /* base00 */
+    color: #7B5782; /* base00 */
     font-size: 14px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 pre, code {
@@ -42,7 +43,7 @@ pre .storage {
 }
 
 pre .string, pre .comment.docstring {
-    color: #2aa198; /* cyan */
+    color: #DEBF24; /* light brown */
 }
 
 pre .support.tag.script, pre .support.tag.style {
@@ -50,7 +51,7 @@ pre .support.tag.script, pre .support.tag.style {
 }
 
 pre .string.regexp {
-    color: #2aa198; /* cyan */
+    color: #F0DB21; /* light yellow */
 }
 
 pre .string.regexp.open, pre .string.regexp.close {
@@ -58,7 +59,7 @@ pre .string.regexp.open, pre .string.regexp.close {
 }
 
 pre .keyword, pre .selector {
-    color: #859900; /* green */
+    color: #21C7F0; /* light blue */
 }
 
 pre .inherited-class {
@@ -70,11 +71,11 @@ pre .entity {
 }
 
 pre .support, *[data-language="c"] .function.call {
-    color: #859900; /* green */
+    color: #59CD2F; /* green */
 }
 
 pre .support.method {
-    color: #657b83; /* base00 */
+    color: #59CD2F; /* base00 */
 }
 
 pre .support.property {
@@ -83,4 +84,8 @@ pre .support.property {
 
 pre .variable.global, pre .variable.class, pre .variable.instance {
     color: #657b83; /* base00 */
+}
+
+pre .function {
+    color: #499A2B; /*green*/
 }
