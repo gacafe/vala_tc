@@ -13,6 +13,9 @@ Welcome to the Python Workshop!
 
 ## About You?
 
+- Interest in Python?
+- Goals?
+
 
 ## Why Python?
 

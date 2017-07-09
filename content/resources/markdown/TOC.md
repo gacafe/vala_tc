@@ -12,7 +12,7 @@
                 |------------------------------------------         ---------------------------------     -------
 Resources       |[Resources](#required-resources)                   Resources available and required      1m
 Welcome         |[Welcome](#welcome)                                Welcome!                              10m
-Background      |[Background](#background)                          Types and objects                     10m
+Background      |[Fundamentals](#fundamentals)                      Variables, Types, Basic Functions     30m
 Basics          |[Basics](#basics)                                  Basics                                30m
 Thanks          |[Thanks](#thanks)                                  Thanks and goodbye                    5m
                 |------------------------------------------         ---------------------------------     -------

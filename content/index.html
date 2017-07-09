@@ -78,9 +78,9 @@
 <td align="left">10m</td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="#background">Background</a></td>
-<td align="left">Types and objects</td>
-<td align="left">10m</td>
+<td align="left"><a href="#fundamentals">Fundamentals</a></td>
+<td align="left">Variables, Types, Basic Functions</td>
+<td align="left">30m</td>
 </tr>
 <tr class="even">
 <td align="left"><a href="#basics">Basics</a></td>
@@ -130,6 +130,10 @@
 <h2 id="about-your-instructors">About Your Instructors</h2>
 <h3 id="gala-noon">Gala &amp; Noon</h3>
 <h2 id="about-you">About You?</h2>
+<ul>
+<li>Interest in Python?</li>
+<li>Goals?</li>
+</ul>
 <h2 id="why-python">Why Python?</h2>
 <!-- C, C#, C++, CSS, Clojure, Elm, F#, FORTRAN, Go, Haskell, Idris, J, Java, JavaScript, K, OCaml, Processing, Python R, Ruby, Rust, Scala, Python, Python, TypeScript, Swift, Objective-C, PHP, Julia, Cryptol, Bash, Cython, F*, Agda, Mercury, G-Code, Janus, Kaleidoscope, LabVIEW, Matlab, Mathematica, Maple, Perl, Q, R, SQL, Scratch, TeX... -->
 <center>
@@ -147,55 +151,147 @@
 <div class='content'>
 
 <hr />
-<h1 id="background">Background</h1>
-<h2 id="types">Types</h2>
+<h1 id="fundamentals">Fundamentals</h1>
+<h2 id="wordbank">Wordbank</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">Variable</td>
+<td align="left">Value</td>
+<td align="left">Type</td>
+</tr>
+<tr class="even">
+<td align="left">Function</td>
+<td align="left">list</td>
+<td align="left">tuple</td>
+</tr>
+<tr class="odd">
+<td align="left">String</td>
+<td align="left">int</td>
+<td align="left">float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="variables-values-types">Variables, Values &amp; Types</h2>
 <ul>
-<li>Strings
+<li>Values represent &quot;things&quot; we want to deal with:
 <ul>
-<li>Characters</li>
+<li>Names: <code>&quot;Noon&quot;</code>, <code>&quot;Gala&quot;</code>, ..</li>
+<li>Ages: <code>34</code>, <code>30</code>, ...</li>
 </ul></li>
-<li>Numbers
-<ul>
-<li>Integers</li>
-<li>Decimals
-<ul>
-<li>Floating Point</li>
-<li>Doubles</li>
-</ul></li>
-</ul></li>
-<li>Lists
-<ul>
-<li>Tuples</li>
-</ul></li>
-<li><code>None</code> Type</li>
+<li>Variables hold <em>Values</em> and can be passed around</li>
+<li>Values have <em>Types</em></li>
+<li>Types specify the &quot;world&quot; of potential <em>Values</em></li>
 </ul>
-<pre class="instruction"><code>Write some examples of these types into the Jupyter Notebook. 
+<h3 id="variables">Variables</h3>
+<p>In Python you can define variables with the <code>=</code> operator.</p>
+<p>Example:</p>
+<pre data-language="python"><code>my_location = &quot;VALA Tech Camp&quot;</code></pre>
+<p>Example:</p>
+<pre data-language="python"><code>number_of_people_present = 22</code></pre>
+<p>Example:</p>
+<pre data-language="python"><code># (x,y) refers to the desk position in terms of rows and columns.
+# We call this a &quot;tuple&quot;.
+my_position_in_this_room = (1, 2)</code></pre>
+<p>Example:</p>
+<pre data-language="python"><code># This is a &quot;list&quot;.
+favourite_foods = [&quot;Pizza&quot;, &quot;Pancakes&quot;, &quot;Toasted Cheese Sandwich&quot;]</code></pre>
+<p>Example:</p>
+<pre data-language="python"><code># In meters
+distance_to_wall = 1.25</code></pre>
+<pre class="instruction"><code>(1) - Define these variables in your notebook, and fill in your
+own values.</code></pre>
+<pre class="instruction"><code>(2) - Ask your neighbours for their favourite decimal number
+and make a list of these. Called `favourite_decimals`.</code></pre>
+<h3 id="types">Types</h3>
+<p>The type of a variable informs how we can use the values.</p>
+<p>For example, we can add and divide numbers, but dividing strings doesn't make a lot of sense.</p>
+<p>We can count the number of elements in a list, but it doesn't make sense to &quot;count&quot; anything on a single number.</p>
+<p>We can learn the type of a variable by using the <code>type</code> function:</p>
+<pre data-language="python"><code>suburb = &quot;Carlton&quot;
+print(type(suburb))</code></pre>
+<pre class="note"><code>We&#39;ve also introduced functions here. The &quot;print&quot; and the &quot;type&quot;
+functions. We will see more of these in the next section.</code></pre>
+<pre class="instruction"><code>(3) - Figure out the type of the variables defined in Exercises 
+1 and 2.
 
-What happens?</code></pre>
-<pre class="instruction"><code>Make a list of favourite words.</code></pre>
+Bonus (3.1): 
+
+Redefine the variable assigned to your distance to the wall and make
+it into an integer: the `int` type in Python.
+
+Bonus (3.2): 
+
+Do you expect the type of the &quot;favourite_foods&quot; and &quot;favourite_decimals&quot;
+variables to have the same type? Do they?</code></pre>
+<pre class="open"><code>Group Question 1: 
+- Are there some types you&#39;ve heard of but not seen here? 
+- Can you imagine some other types of values?  </code></pre>
 <h2 id="functions-and-operators">Functions and Operators</h2>
+<p>We've seen how to define variables and assign values. We would now like to perform actions and operations on these values.</p>
+<p><strong>Functions</strong> are the means by which we can manipulate values. We'll look at some functions that come with Python, and later on we will define our own.</p>
+<h3 id="evaluating-functions">Evaluating Functions</h3>
+<p>We <em>call</em> a function by writing:</p>
+<pre data-language="python"><code>function_name(argument_1, argumnet_2, ...)</code></pre>
+<p>An argument is the input to your function.</p>
 <h3 id="built-in-functions">Built-In Functions</h3>
-<ul>
-<li><code>min</code></li>
-<li><code>print</code></li>
-<li><code>*</code> and <code>multiply</code></li>
-<li><code>+</code> and <code>add</code></li>
-<li><code>range</code></li>
-<li><code>type</code></li>
-</ul>
-<pre class="instruction"><code>Find the type of: 1</code></pre>
-<pre class="instruction"><code>Find the type of: 1.0</code></pre>
-<pre class="instruction"><code>Find the type of: &quot;Hello, World!&quot;</code></pre>
-<pre class="instruction"><code>Find a new value whose type is one we haven&#39;t seen yet.</code></pre>
-<h2 id="keywords">Keywords</h2>
-<ul>
-<li><code>def</code></li>
-<li><code>while</code></li>
-<li><code>pass</code></li>
-<li><code>in</code></li>
-<li><code>if</code></li>
-<li><code>import</code></li>
-</ul>
+<p>The following is an example of <em>calling</em> the <em>print</em> function:</p>
+<pre data-language="python"><code>print(&quot;Hello, World!&quot;)</code></pre>
+<p>Here, <code>print</code> is the function name, and <code>&quot;Hello World&quot;</code> is the first (and only) argument.</p>
+<pre class="instruction"><code>(4) - Use the &quot;print&quot;, &quot;min&quot;, &quot;sum&quot; functions to look at the 
+list of &quot;favourite_decimals&quot;.
+
+(4.1) - What is the sum of your favourite decimals variable?
+      - What is the function name, and what is the argument?
+
+(4.2) - What is the smallest favourite decimal?</code></pre>
+<p>A useful function is the <code>range</code> function. It let's you get a list of numbers. To see the values, we need to use the <code>list</code> function on the range:</p>
+<pre data-language="python"><code>list(range(5, 10))</code></pre>
+<p><a href="https://docs.python.org/3/library/functions.html">Python Built-In function documentation</a>.</p>
+<pre class="instruction"><code>(5) - Use the &quot;range&quot; function to print out all the numbers from
+0 to 10.
+
+(5.1) - Look up the &quot;range&quot; function in the Python documentation, and
+add a new argument so that we only get the even numbers in this range.
+
+Bonus: What is the sum of these two lists?
+
+Bonus: What are the lengths of these lists? (Hint: Look in the 
+documentation for the appropriate function).</code></pre>
+<pre class="note"><code>The Python documentation (which we linked to above) is an 
+invaluable resource for learning about available functions 
+and how to use them. We will use it through-out the session, 
+so we will see more on this later.</code></pre>
+<h3 id="built-in-operators">Built-In Operators</h3>
+<p>We've summed up an entire list, but we can also just add two numbers together using the <code>+</code> operator:</p>
+<pre data-language="python"><code>fun = 5 + 6
+print(fun)</code></pre>
+<pre class="instruction"><code>(6) - What else can be added together? Strings? Lists?
+
+(6.1) - What can&#39;t be added together?
+
+Bonus - Can you guess some other operators that might exist? What do they 
+do on integers? And lists?</code></pre>
+<h3 id="function-reference">Function Reference</h3>
+<p>Below are the functions we've seen:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">type</td>
+<td align="left">list</td>
+<td align="left">print</td>
+</tr>
+<tr class="even">
+<td align="left">sum</td>
+<td align="left">range</td>
+<td align="left">len</td>
+</tr>
+</tbody>
+</table>
+<h2 id="keywords-and-syntax">Keywords and Syntax</h2>
+<p>In the sections to follow we will see <a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords">keywords</a>. These are special words that Python uses to determine how the program is structured.</p>
+<p>The structure of a program is referred to as &quot;Syntax&quot;. It determines what is a comment, what is a function, what is a variable, a value, and indeed <em>every element</em> of the program.</p>
+<p>In practice, keywords are words that we cannot use for variable names.</p>
 
 </div>
 </div>
