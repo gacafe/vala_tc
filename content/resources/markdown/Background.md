@@ -11,6 +11,11 @@ Function          list              tuple
 String            int               float
 -----------       -------------     ------------
 
+```instruction
+Open the notebook entitled "Fundamentals" on your provided 
+server.
+```
+
 ## Variables, Values & Types
 
 - Values represent "things" we want to deal with:
@@ -20,6 +25,7 @@ String            int               float
 - Variables hold _Values_ and can be passed around
 - Values have _Types_
 - Types specify the "world" of potential _Values_
+
 
 
 ### Variables
