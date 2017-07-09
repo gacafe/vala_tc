@@ -75,8 +75,8 @@ w = 9
 ```
 
 ```instruction
-(7) - Evaluate the "seven_up" and "greet_person" functions, 
-with different values, in your notebook. 
+(7) - Evaluate the "seven_up" and "greet_person" functions,
+with different values, in your notebook.
 
 (7.1) - Write a new function, "always_five" that always returns
 the value 5.
@@ -122,7 +122,7 @@ list_of_friends = friends.split(",")
 ```
 
 ```instruction
-(8) - Run the code above, and count the number of friends 
+(8) - Run the code above, and count the number of friends
 in the list.
 
 (8.1) - Try the "replace" function on a string.
@@ -186,14 +186,14 @@ Less Than Or Equal To             `<=`
 -------------------------------------------
 
 ```instruction
-(10) - Try out the above operators on integers and strings. 
+(10) - Try out the above operators on integers and strings.
 
 Which ones can you use to compare an integer to a string?
 
-(10.1) - Are upper case letters smaller than, equal to, or larger 
+(10.1) - Are upper case letters smaller than, equal to, or larger
 than lower case letters?
 
-(10.2) - Does the order of elements matter when you compare if 
+(10.2) - Does the order of elements matter when you compare if
 two lists are equal? What about tuples?
 ```
 
