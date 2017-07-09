@@ -75,16 +75,16 @@
 <tr class="even">
 <td align="left"><a href="#welcome">Welcome</a></td>
 <td align="left">Welcome!</td>
-<td align="left">10m</td>
+<td align="left">5m</td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="#fundamentals">Fundamentals</a></td>
-<td align="left">Variables, Types, Basic Functions</td>
+<td align="left"><a href="#fundamentals-1">Fundamentals 1</a></td>
+<td align="left">Variables, types, basic functions</td>
 <td align="left">30m</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="#basics">Basics</a></td>
-<td align="left">Basics</td>
+<td align="left"><a href="#fundamentals-2">Fundamentals 2</a></td>
+<td align="left">More functions, control flow</td>
 <td align="left">30m</td>
 </tr>
 <tr class="odd">
@@ -151,7 +151,7 @@
 <div class='content'>
 
 <hr />
-<h1 id="fundamentals">Fundamentals</h1>
+<h1 id="fundamentals-1">Fundamentals 1</h1>
 <h2 id="wordbank">Wordbank</h2>
 <table>
 <tbody>
@@ -305,72 +305,152 @@ do on integers? And lists?</code></pre>
 <div class='content'>
 
 <hr />
-<h1 id="basics">Basics</h1>
-<h3 id="user-defined-functions">User-Defined Functions</h3>
-<pre data-language="python"><code>def function_name(arguments):
-    # *do something*
-    print(&quot;Hello&quot;)
-    return some_output </code></pre>
-<p>Simple example:</p>
-<p>Define -- A function that takes a number and adds 7</p>
+<h1 id="fundamentals-2">Fundamentals 2</h1>
+<p>We've seen how to define variables and assign values, and do a bit of basic manipulation of those variables.</p>
+<p>However, in any real-world program we're going to be interested in performing our own transformations on data, and combining transformations together into a larger overall purpose.</p>
+<p>We'll see later on that our main task today will be to investigate movie reviews; and this may involve many steps.</p>
+<p>Functions are a way of collecting together many steps of logic into a single statement. Much like how we would think of walking to the shops and buying apples as a &quot;single thing&quot;, instead of all the individual steps that that would involve.</p>
+<h2 id="user-defined-functions">User-Defined Functions</h2>
+<p>To define a function we will use some keyswords for the first time.</p>
+<p>The <code>def</code> keyword let's us begin what we call a &quot;function block&quot;, and the <code>return</code> keyword let's us set what we refer to as the &quot;return value&quot; of the function.</p>
+<p>Let's take a look at an example:</p>
 <pre data-language="python"><code>def seven_up(x):
     y = x + 7
-    return y </code></pre>
-<p>Use the function --</p>
-<pre data-language="python"><code>&gt; seven_up(5)
-&gt; 12</code></pre>
-<pre class="instruction"><code>
-- Define a function which takes two numbers and adds them together.
-- Define a function which takes a name, such as &quot;Gala&quot; and prints 
-    &gt; &quot;Hello Gala!&quot;
-- Define a function which takes no arguments and always returns 5</code></pre>
+    return y</code></pre>
 <center>
-worbank: <font color='blue'><b> def return </b></font>
+<img src="resources/images/user-defined-function-examples.png" />
 </center>
-<h3 id="control-structures">Control Structures</h3>
-<h4 id="truefalse-statements">True/False statements</h4>
-<center>
-<code>&lt;, &lt;=, ==, &gt;=, &gt;, !=</code>
-</center>
-<pre data-language="python"><code>&gt; 5==7
-&gt; False
+<pre><code>Group Question 2: How many arguments does the function below have?</code></pre>
+<pre data-language="python"><code>def greet_person(name, location):
+    result = &quot;Hello &quot; + name + &quot;! How&#39;s things in &quot; + location + &quot;?&quot;
+    return result</code></pre>
+<pre class="note"><code>The syntax for specifying a function block in Python is that
+the function body, i.e. the &quot;steps&quot;, are indented.
 
-&gt; 5==5
-&gt; True
+For consistency, we will say that there should be 4 spaces
+for all of the steps in the function body relative to the
+position of the &quot;def&quot; keyword.
 
-&gt; 5&gt;=3
-&gt; True
+This rule actually applies to ANY block in Python, such as
+an &quot;if&quot; statement, which we will see later.</code></pre>
+<pre><code>Group Question 3 - What are the steps in the &quot;foo&quot; function
+below?</code></pre>
+<pre data-language="python"><code>def foo(x):
+    w = 1
+    y = x + (7 * w)
+    print(y)
+w = 9</code></pre>
+<pre class="instruction"><code>(7) - Evaluate the &quot;seven_up&quot; and &quot;greet_person&quot; functions, 
+with different values, in your notebook. 
 
-&gt; &quot;Gala&quot;==&quot;gala&quot;
-&gt; False</code></pre>
-<pre class="instruction"><code>
-- Are uppercase letter smaller than, equal to, or larger than lowercase letter. 
-- Can you compare an int and a str?
-- Does order matter when you compare if two lists are equal?
-- What about two tuples?
-- What about two dictionaries?</code></pre>
-<h4 id="ifelse-ifelse">If/Else if/Else</h4>
-<pre data-language="python"><code>if some_statement:
-    # this is the first statement it will try
-    print(&#39;The first statement was true!&#39;)
-elif some_other_statement:
-    # this is the second statement it will try
-    print (&#39;The next statement was true!&#39;)
+(7.1) - Write a new function, &quot;always_five&quot; that always returns
+the value 5.
+
+(7.2) - Delete the &quot;return result&quot; line from the &quot;greet_person&quot;
+function and try and evaluate it again, like you did in step 7.
+What is different?</code></pre>
+<h2 id="objects-and-functions-on-them">Objects and Functions on them</h2>
+<p>We often think of Python as an Object-oriented programming language.</p>
+<p>An &quot;Object&quot; is a way of representing something about the world. Examples of things we might like to represent are:</p>
+<ul>
+<li>Houses</li>
+<li>Our friends</li>
+<li>Places we've been</li>
+<li>Words</li>
+<li>Sentences</li>
+</ul>
+<p>We won't go into the details of objects (and classes) here (take a look at <a href="https://www.digitalocean.com/community/tutorials/how-to-construct-classes-and-define-objects-in-python-3">this</a> and <a href="https://en.wikibooks.org/wiki/A_Beginner%27s_Python_Tutorial/Classes">this</a> for a nice introduction), but we will make use of them.</p>
+<p>As usual let's investigate by example. Consider the following string:</p>
+<pre data-language="python"><code>friends = &quot;Jean Girard,Ricky Bobby,Cal Naughton Jr.,Susan&quot;</code></pre>
+<p>We'd like to count the number of friends in this string. One solution would be to convert this string into a list, and count the elements in the list.</p>
+<p>The function <a href="https://docs.python.org/3/library/stdtypes.html#str.split"><code>split</code></a> can be used here. This is defined <em>on</em> the string itself:</p>
+<pre data-language="python"><code>list_of_friends = friends.split(&quot;,&quot;)</code></pre>
+<pre class="instruction"><code>(8) - Run the code above, and count the number of friends 
+in the list.
+
+(8.1) - Try the &quot;replace&quot; function on a string.
+
+(8.2) - Try the &quot;upper&quot; and &quot;lower&quot; functions on strings.
+
+(8.3) - Challenge: Use the &quot;join&quot; function on a string to go
+        from the &quot;list_of_friends&quot; variable back to the
+        string where the friends are separated by commas.
+        This can be done in one line.</code></pre>
+<h2 id="control-structures">Control Structures</h2>
+<p>So far we've seen how to define functions and variables, but we're yet to make any kind of decision based on their values!</p>
+<p>Control structures let us change our program <em>flow</em> based on the values.</p>
+<div class="figure">
+<img src="resources/images/quest.gif" />
+
+</div>
+<p>Let's see an example of an &quot;if/else&quot; statement, along with the <code>==</code> operator (named &quot;equals&quot;).</p>
+<pre data-language="python"><code>quest = &quot;...&quot;
+
+if &quot;Learn Python&quot; == quest:
+    print(&quot;You may pass!&quot;)
 else:
-    # this is what it will do if nothing above it was true
-    print(&#39;All stemements were false!&#39;)</code></pre>
-<p>Simple example: If a number is equal to 5:add 2, if a number is smaller than 5: multiply by 2, if a number is larger than 5: divide by 2</p>
-<pre data-language="python"><code>x = 7
-if x==5:
-    y = x+2
-elif x&lt;5:
-    y = x*2
-elif x&gt;5:
-    y = x/2
-print(y)</code></pre>
-<p>Worbank:</p>
-<p><font color='magenta'><b>if elif else and or </b></font></p>
+    print(&quot;*You get thrown off the bridge and into the ravine.*&quot;)</code></pre>
+<pre class="instruction"><code>(9) - Run the code above. What happens? Can you put in a value
+that lets you pass?
+
+(9.1) - What is the type of: &quot;Learn Python&quot; == quest</code></pre>
+<h3 id="logical-operators">Logical Operators</h3>
+<p>We can use any of the following operators for making decisions:</p>
+<table style="width:54%;">
+<colgroup>
+<col width="42%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Operator</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Equal To</td>
+<td align="left"><code>==</code></td>
+</tr>
+<tr class="even">
+<td align="left">Not Equal To</td>
+<td align="left"><code>!=</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Greater Than</td>
+<td align="left"><code>&gt;</code></td>
+</tr>
+<tr class="even">
+<td align="left">Less Than</td>
+<td align="left"><code>&lt;</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Greater Than Or Equal To</td>
+<td align="left"><code>&gt;=</code></td>
+</tr>
+<tr class="even">
+<td align="left">Less Than Or Equal To</td>
+<td align="left"><code>&lt;=</code></td>
+</tr>
+</tbody>
+</table>
+<pre class="instruction"><code>(10) - Try out the above operators on integers and strings. 
+
+Which ones can you use to compare an integer to a string?
+
+(10.1) - Are upper case letters smaller than, equal to, or larger 
+than lower case letters?
+
+(10.2) - Does the order of elements matter when you compare if 
+two lists are equal? What about tuples?</code></pre>
 <h3 id="looping">Looping</h3>
+<center>
+<img src="resources/images/turning.gif" />
+</center>
+<p>Oftentimes we will want to run a certain step several times, or even indefinitely!</p>
+<p>One of the standard tools is the <code>for</code> loop, which let's us perform a step a given number of times. Let's see an example:</p>
+<pre data-language="python"><code>for k in range(0, 10):
+    print(k)</code></pre>
 
 </div>
 </div>
