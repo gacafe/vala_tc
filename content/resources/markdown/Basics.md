@@ -284,8 +284,8 @@ that solves this task:
 
 Example:
 
-for great_movies in all_movies_ever:
-    for movie in great_movies:
+for movie in all_movies_ever:
+    if is_great(movie):
         watch(movie)
         discuss(movie, with=friends)
 ```
