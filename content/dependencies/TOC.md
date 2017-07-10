@@ -14,6 +14,7 @@
 [Welcome](#welcome)                                Welcome!                              5m
 [Fundamentals 1](#fundamentals-1)                  Variables, types, basic functions     30m
 [Fundamentals 2](#fundamentals-2)                  More functions, control flow          30m
+[Pandas](#pandas)                                  Pandas: Making sense of data          30m
 [Thanks](#thanks)                                  Thanks and goodbye                    5m
 ------------------------------------------         ---------------------------------     -------
 </div>

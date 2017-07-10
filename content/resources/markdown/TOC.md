@@ -14,6 +14,7 @@ Resources       |[Resources](#required-resources)                   Resources av
 Welcome         |[Welcome](#welcome)                                Welcome!                              5m
 Background      |[Fundamentals 1](#fundamentals-1)                  Variables, types, basic functions     30m
 Basics          |[Fundamentals 2](#fundamentals-2)                  More functions, control flow          30m
+Pandas          |[Pandas](#pandas)                                  Pandas: Making sense of data          30m
 Thanks          |[Thanks](#thanks)                                  Thanks and goodbye                    5m
                 |------------------------------------------         ---------------------------------     -------
 </div>

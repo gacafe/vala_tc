@@ -274,3 +274,18 @@ to print only those things that start with the letter "d".
     Hint: You may like to look up functions that are available on
     strings, much as we did earlier.
 ```
+
+```
+Group Question 4 - Have you encountered a real-life version of
+a for loop? What is it?
+
+Take a few minutes to write a pseudo-code version of a for loop
+that solves this task:
+
+Example:
+
+for great_movies in all_movies_ever:
+    for movie in great_movies:
+        watch(movie)
+        discuss(movie, with=friends)
+```
