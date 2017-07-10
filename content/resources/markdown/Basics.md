@@ -135,6 +135,50 @@ in the list.
         This can be done in one line.
 ```
 
+### Lists
+
+<center>
+![](resources/images/podium.jpg)
+</center>
+
+When we think of a list we are generally interested in such questions as:
+
+- What is the first thing in this list?
+- What is the last thing?
+
+and we may also be interested in such tasks as:
+
+- Give me the first 3 elements of this list!
+
+Python has a powerful mechanism for these tasks: [List
+Slicing](https://docs.python.org/3/tutorial/introduction.html#lists). These
+techniques allow us to access elements of a list. Let's see by example:
+
+```{data-language=python}
+things = ["Plant", "Computer", "Book", "Lamp"]
+```
+
+```instruction
+(9) - Try the following statements with the variable above:
+
+- print(things[0])
+- print(things[1:3])
+- print(things[-1])
+
+What do you get?
+
+(9.1) - By reading the slicing documentaiton, can you write a slice
+expression that gives back only the first 3 items? Can you do it in
+two different ways?
+
+(9.2) - We can use this notation to set elements of a list, just like 
+we did with variables earlier. Try updating the first element to be
+your favourite meal.
+
+(9.3) - Challenge - Can you treat a string as a list? What works? 
+What doesn't?
+```
+
 
 ## Control Structures
 
@@ -158,10 +202,10 @@ else:
 ```
 
 ```instruction
-(9) - Run the code above. What happens? Can you put in a value
+(10) - Run the code above. What happens? Can you put in a value
 that lets you pass?
 
-(9.1) - What is the type of: "Learn Python" == quest
+(10.1) - What is the type of: "Learn Python" == quest
 ```
 
 
@@ -186,14 +230,14 @@ Less Than Or Equal To             `<=`
 -------------------------------------------
 
 ```instruction
-(10) - Try out the above operators on integers and strings.
+(11) - Try out the above operators on integers and strings.
 
 Which ones can you use to compare an integer to a string?
 
-(10.1) - Are upper case letters smaller than, equal to, or larger
+(11.1) - Are upper case letters smaller than, equal to, or larger
 than lower case letters?
 
-(10.2) - Does the order of elements matter when you compare if
+(11.2) - Does the order of elements matter when you compare if
 two lists are equal? What about tuples?
 ```
 
@@ -212,4 +256,36 @@ a step a given number of times. Let's see an example:
 ```{data-language=python}
 for k in range(0, 10):
     print(k)
+```
+
+This introduces two new keywords: `for` and `in`.
+
+
+```instruction
+(12) - Using what we've learned above, make a for loop over 
+the numbers from 1 to 10, that:
+
+- prints "hello" if the number is less than 5
+- prints "goodbye!" otherwise
+
+(12.1) - Define a list of nearby things, and use a for loop
+to print only those things that start with the letter "d".
+
+    Hint: You may like to look up functions that are available on
+    strings, much as we did earlier.
+```
+
+```
+Group Question 4 - Have you encountered a real-life version of
+a for loop? What is it?
+
+Take a few minutes to write a pseudo-code version of a for loop
+that solves this task:
+
+Example:
+
+for movie in all_movies_ever:
+    if is_great(movie):
+        watch(movie)
+        discuss(movie, with=friends)
 ```
