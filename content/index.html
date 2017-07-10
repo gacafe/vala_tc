@@ -434,7 +434,7 @@ that lets you pass?
 (10.1) - What is the type of: &quot;Learn Python&quot; == quest</code></pre>
 <h3 id="logical-operators">Logical Operators</h3>
 <p>We can use any of the following operators for making decisions:</p>
-<table style="width:54%;">
+<table>
 <colgroup>
 <col width="42%" />
 <col width="11%" />
@@ -525,6 +525,94 @@ for movie in all_movies_ever:
 
 <hr />
 <h1 id="pandas">Pandas!</h1>
+<h2 id="libraries">Libraries</h2>
+<center>
+<img src="resources/images/library.gif" />
+</center>
+<p>A Library in Python is a collection of methods and functions that let you do interesting things without writing raw code to do it.</p>
+<ul>
+<li>You import an entire library in order to use it in your code,
+<ul>
+<li><p>you can give it an alias,</p>
+<pre data-language="python"><code># Import the pandas library and call it &#39;pd&#39;
+import pandas as pd</code></pre></li>
+<li><p>or just use its name</p>
+<pre data-language="python"><code># Import the sys library (as sys)
+import sys</code></pre></li>
+</ul></li>
+<li><p>you can import only the functions you want to use</p>
+<pre data-language="python"><code># Import the &#39;ceil&#39; function from the &#39;math&#39; library
+from math import ceil</code></pre>
+<p>How you import libraries affects the way you use it in your code.</p></li>
+</ul>
+<p>The ceil function in the math library lets you find the value of rounding up a number.</p>
+<pre data-language="python"><code>import math as ma
+ma.ceil(9.7)</code></pre>
+<pre data-language="python"><code>import math
+math.ceil(9.7)</code></pre>
+<pre data-language="python"><code>from math import ceil
+ceil(9.7)</code></pre>
+<pre class="note"><code>Python comes with some libraries already installed. &#39;math&#39; is one 
+of them. These pre-installed libraries are all in the Python 
+Standard Library. 
+There are lots of handy libraries that you can install and use 
+(how to do it is beyond our scope :( )</code></pre>
+<p><a href="https://docs.python.org/3/library/index.html">The Python Standard Library</a></p>
+<p>Today we will be learning about the pandas library. Pandas lets us play with data!</p>
+<h2 id="the-pandas-library">The pandas library</h2>
+<center>
+<img src="resources/images/panda.gif" />
+</center>
+<pre class="instruction"><code>(13) - Import pandas into your notebook and give it &#39;pd&#39; 
+as an alias. </code></pre>
+<p>We found some data on IMDB about movies, these files are located under the folder &quot;data&quot;. We can read each of these files into what we call a &quot;DataFrame&quot; and play with the data. This DataFrame is an object, and as such, it has many functions we can use to investigate it and have fun.</p>
+<pre class="instruction"><code>(14) - Use the read_csv function from pandas to read the file 
+&quot;data/movies.csv&quot;, assign this file to a variable, &quot;movies&quot;. 
+
+(14.1) - Look at the first 5 rows of your data using the &quot;head&quot; 
+function on &quot;movies&quot;
+
+    movies.head(5)
+
+What are the columns in this data?
+
+(14.2) What can you predict will be the &quot;type&quot; of what you observe
+ in each column. </code></pre>
+<p>We can access &quot;attributes&quot; of the DataFrame to learn things about it.</p>
+<p>For example if I want to know the column names of my dataframe I can do the following:</p>
+<pre data-language="python"><code>movies.columns</code></pre>
+<pre class="instruction"><code>(15) - Investigate the following attributes:
+- shape
+- dtypes</code></pre>
+<p>We can investigate a full column in our DataFrame, the column when referenced by the index, is called a &quot;Series&quot;. We can look at the &quot;title&quot; in our DataFrame as follows:</p>
+<pre data-language="python"><code>movies[&#39;title&#39;]</code></pre>
+<p>We can look locate data in our DataFrame using the attribute &quot;loc&quot;. To access a particular row, or more precisely, the row indexed 27, we would do,</p>
+<pre data-language="python"><code>movies.loc[27]</code></pre>
+<p>We can also access a particular based on a value in the column:</p>
+<pre data-language="python"><code>movies.loc[movies[&#39;title&#39;]==&quot;Ghostbusters (2016)&quot;]</code></pre>
+<pre class="instruction"><code>(16) - Read in the file &quot;ratings.csv&quot; in the data folder. 
+
+(16.1) - How many ratings are in this file?
+
+(16.2) - Find all the ratings for userId == 14
+
+(16.3) - Asumming 5 is the best score, what is the title of their
+ best rated movie?
+
+(16.4) - What are the genres of this movie?
+
+(16.5) - Challenge: Use the &quot;sort_values&quot; function on your ratings 
+DataFrame and sort them according to the &quot;rating&quot; column. Can you
+  sort them from largest to smallest, ie. descending</code></pre>
+<p>Hint: You can find documentation here -&gt; <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html">sort_values</a></p>
+<p>Pandas makes it really easy for us to add columns to our DataFrame. Suppose we hate this 5-star rating, instead we want to see a score out of 100, and we want the name of the column to be &quot;score&quot;</p>
+<pre data-language="python"><code>ratings[&#39;score&#39;] = 100 * ratings[&#39;rating&#39;]/5</code></pre>
+<p>We can also find out how many unique different &quot;scores&quot; we assigned, by using the &quot;unique&quot; function on the &quot;scores&quot; series.</p>
+<pre class="instruction"><code>(17) - Find the unique scores by doing the following:
+- follow the code above to assing your ratings data a &quot;score&quot;
+- access the &quot;score&quot; column as a series, like we did to access
+ movie titles (movies[&#39;title&#39;])
+- use the &quot;unique&quot; function to get all unique scores. </code></pre>
 
 </div>
 </div>
