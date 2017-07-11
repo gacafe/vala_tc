@@ -70,7 +70,7 @@
 <tr class="odd">
 <td align="left"><a href="#required-resources">Resources</a></td>
 <td align="left">Resources available and required</td>
-<td align="left">1m</td>
+<td align="left">5m</td>
 </tr>
 <tr class="even">
 <td align="left"><a href="#welcome">Welcome</a></td>
@@ -78,12 +78,12 @@
 <td align="left">5m</td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="#fundamentals-1">Fundamentals 1</a></td>
+<td align="left"><a href="#getting-acquainted">Getting Acquainted</a></td>
 <td align="left">Variables, types, basic functions</td>
 <td align="left">30m</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="#fundamentals-2">Fundamentals 2</a></td>
+<td align="left"><a href="#getting-cosy">Getting Cosy</a></td>
 <td align="left">More functions, control flow</td>
 <td align="left">30m</td>
 </tr>
@@ -93,6 +93,11 @@
 <td align="left">30m</td>
 </tr>
 <tr class="even">
+<td align="left"><a href="#funtimes">Funtimes</a></td>
+<td align="left">Experiment with what you've learned!</td>
+<td align="left">20m</td>
+</tr>
+<tr class="odd">
 <td align="left"><a href="#thanks">Thanks</a></td>
 <td align="left">Thanks and goodbye</td>
 <td align="left">5m</td>
@@ -156,7 +161,10 @@
 <div class='content'>
 
 <hr />
-<h1 id="fundamentals-1">Fundamentals 1</h1>
+<h1 id="getting-acquainted">Getting Acquainted</h1>
+<center>
+<img src="resources/images/skeptical.jpg" />
+</center>
 <h2 id="wordbank">Wordbank</h2>
 <table>
 <tbody>
@@ -211,6 +219,8 @@ own values.</code></pre>
 <pre class="instruction"><code>(2) - Ask your neighbours for their favourite decimal number
 and make a list of these. Called `favourite_decimals`.</code></pre>
 <h3 id="types">Types</h3>
+<pre><code>Q: How do you make a great program?
+A: You type it!</code></pre>
 <p>The type of a variable informs how we can use the values.</p>
 <p>For example, we can add and divide numbers, but dividing strings doesn't make a lot of sense.</p>
 <p>We can count the number of elements in a list, but it doesn't make sense to &quot;count&quot; anything on a single number.</p>
@@ -255,11 +265,12 @@ list of &quot;favourite_decimals&quot;.
 <p>A useful function is the <code>range</code> function. It let's you get a list of numbers. To see the values, we need to use the <code>list</code> function on the range:</p>
 <pre data-language="python"><code>list(range(5, 10))</code></pre>
 <p><a href="https://docs.python.org/3/library/functions.html">Python Built-In function documentation</a>.</p>
-<pre class="instruction"><code>(5) - Use the &quot;range&quot; function to print out all the numbers from
-0 to 10.
+<pre class="instruction"><code>(5) - Use the &quot;range&quot; function to print out all the numbers 
+from 0 to 10.
 
-(5.1) - Look up the &quot;range&quot; function in the Python documentation, and
-add a new argument so that we only get the even numbers in this range.
+(5.1) - Look up the &quot;range&quot; function in the Python 
+documentation, and add a new argument so that we only get 
+the even numbers in this range.
 
 Bonus: What is the sum of these two lists?
 
@@ -310,7 +321,11 @@ do on integers? And lists?</code></pre>
 <div class='content'>
 
 <hr />
-<h1 id="fundamentals-2">Fundamentals 2</h1>
+<h1 id="getting-cosy">Getting Cosy</h1>
+<div class="figure">
+<img src="resources/images/cosy.jpg" />
+
+</div>
 <p>We've seen how to define variables and assign values, and do a bit of basic manipulation of those variables.</p>
 <p>However, in any real-world program we're going to be interested in performing our own transformations on data, and combining transformations together into a larger overall purpose.</p>
 <p>We'll see later on that our main task today will be to investigate movie reviews; and this may involve many steps.</p>
@@ -434,7 +449,7 @@ that lets you pass?
 (10.1) - What is the type of: &quot;Learn Python&quot; == quest</code></pre>
 <h3 id="logical-operators">Logical Operators</h3>
 <p>We can use any of the following operators for making decisions:</p>
-<table>
+<table style="width:54%;">
 <colgroup>
 <col width="42%" />
 <col width="11%" />
@@ -525,47 +540,62 @@ for movie in all_movies_ever:
 
 <hr />
 <h1 id="pandas">Pandas!</h1>
+<p>In this section we'll see our first Python Library. But before we get into that, we need first take a look at how libraries work!</p>
 <h2 id="libraries">Libraries</h2>
 <center>
 <img src="resources/images/library.gif" />
 </center>
-<p>A Library in Python is a collection of methods and functions that let you do interesting things without writing raw code to do it.</p>
+<p>A Library in Python is a collection of functions that let you do interesting things without writing raw code to do it.</p>
 <ul>
 <li>You import an entire library in order to use it in your code,
 <ul>
-<li><p>you can give it an alias,</p>
+<li><p>You can give it an alias,</p>
 <pre data-language="python"><code># Import the pandas library and call it &#39;pd&#39;
 import pandas as pd</code></pre></li>
 <li><p>or just use its name</p>
 <pre data-language="python"><code># Import the sys library (as sys)
 import sys</code></pre></li>
 </ul></li>
-<li><p>you can import only the functions you want to use</p>
+<li><p>You can import only the functions you want to use</p>
 <pre data-language="python"><code># Import the &#39;ceil&#39; function from the &#39;math&#39; library
-from math import ceil</code></pre>
-<p>How you import libraries affects the way you use it in your code.</p></li>
+from math import ceil</code></pre></li>
 </ul>
-<p>The ceil function in the math library lets you find the value of rounding up a number.</p>
+<p>How you import libraries affects the way you use them in your code.</p>
+<p>The <code>ceil</code> function in the <code>math</code> library lets you find the value of rounding up a number. Let's take a look at some examples:</p>
 <pre data-language="python"><code>import math as ma
 ma.ceil(9.7)</code></pre>
 <pre data-language="python"><code>import math
 math.ceil(9.7)</code></pre>
 <pre data-language="python"><code>from math import ceil
 ceil(9.7)</code></pre>
-<pre class="note"><code>Python comes with some libraries already installed. &#39;math&#39; is one 
-of them. These pre-installed libraries are all in the Python 
-Standard Library. 
-There are lots of handy libraries that you can install and use 
-(how to do it is beyond our scope :( )</code></pre>
+<pre class="note"><code>Python comes with some libraries already installed. 
+
+The &#39;math&#39; library is one of them. These libraries that come
+pre-installed are called &quot;The Python Standard Library&quot;
+
+One of the main benefits of Python is that there is a large and
+well-supported community of handy libraries that you can install
+and use for free! </code></pre>
+<center>
+<img src="resources/images/imports.jpg" />
+</center>
 <p><a href="https://docs.python.org/3/library/index.html">The Python Standard Library</a></p>
-<p>Today we will be learning about the pandas library. Pandas lets us play with data!</p>
+<p>Today we will be learning about the <a href="http://pandas.pydata.org">pandas library</a>. Pandas lets us play with data!</p>
 <h2 id="the-pandas-library">The pandas library</h2>
 <center>
 <img src="resources/images/panda.gif" />
 </center>
-<pre class="instruction"><code>(13) - Import pandas into your notebook and give it &#39;pd&#39; 
-as an alias. </code></pre>
-<p>We found some data on IMDB about movies, these files are located under the folder &quot;data&quot;. We can read each of these files into what we call a &quot;DataFrame&quot; and play with the data. This DataFrame is an object, and as such, it has many functions we can use to investigate it and have fun.</p>
+<pre class="instruction"><code>In your notebook environments we have pre-installed pandas
+for you.
+
+(13) - Import pandas into your notebook and give it &#39;pd&#39; as an alias. </code></pre>
+<h3 id="worked-example-movie-reviews">Worked Example: Movie Reviews</h3>
+<div class="figure">
+<img src="resources/images/pandas-clapping.jpg" />
+
+</div>
+<p>We found some data about movies, these files are located under the folder <code>data</code> on your instances.</p>
+<p>We can read each of these files into what we call a <code>DataFrame</code> and play with the data. This <code>DataFrame</code> is an object, and as such, it has many functions we can use to investigate it and have fun!</p>
 <pre class="instruction"><code>(14) - Use the read_csv function from pandas to read the file 
 &quot;data/movies.csv&quot;, assign this file to a variable, &quot;movies&quot;. 
 
@@ -576,19 +606,39 @@ function on &quot;movies&quot;
 
 What are the columns in this data?
 
-(14.2) What can you predict will be the &quot;type&quot; of what you observe
- in each column. </code></pre>
-<p>We can access &quot;attributes&quot; of the DataFrame to learn things about it.</p>
+(14.2) Looking at the values, what do you think the &quot;type&quot; of the
+data in each column is? Write your guesses down.</code></pre>
+<pre class="note"><code>On Indicies
+
+An index is used by pandas to provide a unique identifier for 
+each row. If none is specified, Pandas will automatically insert 
+one based on the row number.
+
+We can set multiple columns to define the index as long as the
+combination of values is unique. This is called a multi-index.</code></pre>
+<pre><code>Group Question 5 - Can you think of a common multi-index that
+you use in your everyday life?</code></pre>
+<p>We can access attributes of the DataFrame to learn things about it.</p>
 <p>For example if I want to know the column names of my dataframe I can do the following:</p>
 <pre data-language="python"><code>movies.columns</code></pre>
 <pre class="instruction"><code>(15) - Investigate the following attributes:
 - shape
 - dtypes</code></pre>
-<p>We can investigate a full column in our DataFrame, the column when referenced by the index, is called a &quot;Series&quot;. We can look at the &quot;title&quot; in our DataFrame as follows:</p>
+<p>We can investigate a full column in our DataFrame. the column when referenced by the index, is called a &quot;Series&quot;.</p>
+<p>Let's investigate our data a bit more closely, and look at the &quot;title&quot; column in our <code>DataFrame</code> as follows:</p>
 <pre data-language="python"><code>movies[&#39;title&#39;]</code></pre>
-<p>We can look locate data in our DataFrame using the attribute &quot;loc&quot;. To access a particular row, or more precisely, the row indexed 27, we would do,</p>
+<p>This results in what Pandas calls a <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html"><code>Series</code></a>.</p>
+<pre class="note"><code>On Series and DataFrames
+
+Pandas makes a differentiation between &quot;Series&quot; and &quot;DataFrames&quot;.
+This becomes important when thinking about what functions we can
+perform on them.
+
+Intuitively, we will think of a Series as a single column in a
+DataFrame which is still accessible via the index.</code></pre>
+<p>We can locate data in our DataFrame using the attribute <code>loc</code>. To access a particular row, or more precisely, the row indexed by <code>27</code>, we would write,</p>
 <pre data-language="python"><code>movies.loc[27]</code></pre>
-<p>We can also access a particular based on a value in the column:</p>
+<p>We can also access a particular set of rows based on a value in the column:</p>
 <pre data-language="python"><code>movies.loc[movies[&#39;title&#39;]==&quot;Ghostbusters (2016)&quot;]</code></pre>
 <pre class="instruction"><code>(16) - Read in the file &quot;ratings.csv&quot; in the data folder. 
 
@@ -603,16 +653,73 @@ What are the columns in this data?
 
 (16.5) - Challenge: Use the &quot;sort_values&quot; function on your ratings 
 DataFrame and sort them according to the &quot;rating&quot; column. Can you
-  sort them from largest to smallest, ie. descending</code></pre>
-<p>Hint: You can find documentation here -&gt; <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html">sort_values</a></p>
-<p>Pandas makes it really easy for us to add columns to our DataFrame. Suppose we hate this 5-star rating, instead we want to see a score out of 100, and we want the name of the column to be &quot;score&quot;</p>
+sort them from largest to smallest, ie. descending?</code></pre>
+<p>(Hint: You can find documentation <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html">here</a>.)</p>
+<p>Pandas makes it really easy for us to add columns to our DataFrame. Suppose we are not fans of this 5-star rating, instead we want to see a score out of 100, and we want the name of the column to be &quot;score&quot;</p>
 <pre data-language="python"><code>ratings[&#39;score&#39;] = 100 * ratings[&#39;rating&#39;]/5</code></pre>
-<p>We can also find out how many unique different &quot;scores&quot; we assigned, by using the &quot;unique&quot; function on the &quot;scores&quot; series.</p>
+<p>We can also find out how many unique different scores we assigned, by using the <code>unique</code> function on the <code>scores</code> series.</p>
 <pre class="instruction"><code>(17) - Find the unique scores by doing the following:
-- follow the code above to assing your ratings data a &quot;score&quot;
-- access the &quot;score&quot; column as a series, like we did to access
- movie titles (movies[&#39;title&#39;])
-- use the &quot;unique&quot; function to get all unique scores. </code></pre>
+
+    - Follow the code above to assing your ratings data a &quot;score&quot;
+
+    - Access the &quot;score&quot; column as a series, like we did to access
+      movie titles (movies[&#39;title&#39;])
+
+    - Use the &quot;unique&quot; function to get all unique scores.
+      How many are there?</code></pre>
+<pre class="instruction"><code>(18) - Challenge - Merging DataFrames
+
+As it stands, the &quot;ratings&quot; DataFrame we only see the movieId, and not the
+name of the movie. If we were able to merge in the &quot;movies&quot; DataFrame, then
+we could see the ratings together with the movie name and other data.
+
+Use the &quot;merge&quot; function on a DataFrame to merge &quot;movies&quot; into &quot;ratings&quot;.
+
+(18.1) - Extra Challenge - Can you find a way to only merge the movie name,
+and not the other columns.</code></pre>
+<pre class="instruction">Exercise - (19) - Joint Exercises
+
+Later in the Tech Camp you will learn how to use APIs. IMDB has an API
+that is accessible via the library
+[ImdbPie](https://github.com/richardasaurus/imdb-pie).
+
+This can be used to get the movie poster for the movies in this data set.
+
+If you feel comfortable with APIs, come back to this exercise and use
+the "imdbId" field from the "movies" data set to find the movie poster
+for that movie and display it in the notebook!
+
+Hint: Here are two functions that will be handy:
+
+def toImdbFormat(imdbId):
+    return "tt" + (("0" * 7) + str(imdbId))[-7:]
+
+def poster_image(imdbId):
+    from IPython.display import Image
+    id_ = toImdbFormat(imdbId)
+    title = imdb.get_title_by_id(id_)
+    return Image(url=title.poster_url, width=200, height=200)
+</pre>
+<pre class="instruction"><code>(20) - Ambitious - Finding Friends To Watch Movies With
+
+Write some code that, using the &quot;reviews&quot; DataFrame, finds
+users that reated the same movie highly (a 5, say) and then
+in this way build a new DataFrame, &quot;friends&quot;, with the following
+columns:
+
+    friendId1, friendId2
+</code></pre>
+
+</div>
+</div>
+
+
+
+
+<div class='chapter'>
+<div class='content'>
+
+
 
 </div>
 </div>

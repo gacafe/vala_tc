@@ -1,7 +1,13 @@
 
 ----
 
-# Fundamentals 1
+# Getting Acquainted
+
+
+<center>
+![](resources/images/skeptical.jpg)
+</center>
+
 
 ## Wordbank
 
@@ -73,6 +79,11 @@ and make a list of these. Called `favourite_decimals`.
 
 
 ### Types
+
+```
+Q: How do you make a great program?
+A: You type it!
+```
 
 The type of a variable informs how we can use the values.
 
@@ -170,11 +181,12 @@ list(range(5, 10))
 documentation](https://docs.python.org/3/library/functions.html).
 
 ```instruction
-(5) - Use the "range" function to print out all the numbers from
-0 to 10.
+(5) - Use the "range" function to print out all the numbers 
+from 0 to 10.
 
-(5.1) - Look up the "range" function in the Python documentation, and
-add a new argument so that we only get the even numbers in this range.
+(5.1) - Look up the "range" function in the Python 
+documentation, and add a new argument so that we only get 
+the even numbers in this range.
 
 Bonus: What is the sum of these two lists?
 

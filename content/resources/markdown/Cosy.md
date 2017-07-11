@@ -1,7 +1,9 @@
 
 ----
 
-# Fundamentals 2
+# Getting Cosy
+
+![](resources/images/cosy.jpg)
 
 We've seen how to define variables and assign values, and do a bit of basic
 manipulation of those variables.
