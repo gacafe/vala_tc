@@ -15,7 +15,7 @@ Welcome         |[Welcome](#welcome)                                Welcome!    
 Acquainted      |[Getting Acquainted](#getting-acquainted)          Variables, types, basic functions     30m
 Cosy            |[Getting Cosy](#getting-cosy)                      More functions, control flow          30m
 Pandas          |[Pandas](#pandas)                                  Pandas: Making sense of data          30m
-Funtimes        |[Funtimes](#funtimes)                              Experiment with what you've learned!  20m
+Funtimes        |[Funtimes](#funtimes)                              Experiment with what you've learned!  15m
 Thanks          |[Thanks](#thanks)                                  Thanks and goodbye                    5m
                 |------------------------------------------         ---------------------------------     -------
 </div>
