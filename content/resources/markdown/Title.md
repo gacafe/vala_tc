@@ -26,20 +26,19 @@ Press "t" to toggle showing the table of contents
 **Concepts**
 
 1) What is Python and what can be done with it?
-2) What is special about Python as a programming language?
-3) What are Python libraries?
+1) What is special about Python as a programming language?
+1) What are Python libraries?
 
 **Outcomes**
 
 1) I can use Python
-2) I can read Python documentation
-3) I can use Pandas to 
+1) I can read Python documentation
+1) I can use Pandas to 
     1) Read and write data
-    2) Select particular data
-    3) Group data
-    4) Investigate data
-    5) Add simple information (colums) to the data
-    6) Link data*
-    7) Add complex information (from different locations) to the data*
+    1) Select particular data
+    1) Investigate data
+    1) Add simple information (colums) to the data
+    1) Link data*
+    1) Add complex information (from different locations) to the data*
 
 
