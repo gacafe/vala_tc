@@ -10,12 +10,11 @@
 <!--       ';' is a comment                                                                  -->
 
 ------------------------------------------         ---------------------------------     -------
-[Resources](#required-resources)                   Resources available and required      5m
+[Resources](#required-resources)                   Resources available and required      1m
 [Welcome](#welcome)                                Welcome!                              5m
-[Getting Acquainted](#getting-acquainted)          Variables, types, basic functions     30m
-[Getting Cosy](#getting-cosy)                      More functions, control flow          30m
+[Fundamentals 1](#fundamentals-1)                  Variables, types, basic functions     30m
+[Fundamentals 2](#fundamentals-2)                  More functions, control flow          30m
 [Pandas](#pandas)                                  Pandas: Making sense of data          30m
-[Funtimes](#funtimes)                              Experiment with what you've learned!  20m
 [Thanks](#thanks)                                  Thanks and goodbye                    5m
 ------------------------------------------         ---------------------------------     -------
 </div>
