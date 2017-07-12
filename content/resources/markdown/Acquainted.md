@@ -85,7 +85,7 @@ Q: How do you make a great program?
 A: You type it!
 ```
 
-The type of a variable informs how we can use the values.
+The type of a variable informs how we can use it.
 
 For example, we can add and divide numbers, but dividing strings
 doesn't make a lot of sense.
@@ -112,7 +112,9 @@ functions. We will see more of these in the next section.
 Bonus (3.1): 
 
 Redefine the variable assigned to your distance to the wall and make
-it into an integer: the `int` type in Python.
+it into an integer: the `int` type in Python. (Reminder: Integers
+are whole numbers with no decimal places. I.e. 6, 1983, -123, but not -2.1
+or 1/2.)
 
 Bonus (3.2): 
 
@@ -142,7 +144,7 @@ We _call_ a function by writing:
 
 
 ```{data-language=python}
-function_name(argument_1, argumnet_2, ...)
+function_name(argument_1, argument_2, ...)
 ```
 
 An argument is the input to your function.
@@ -170,8 +172,8 @@ list of "favourite_decimals".
 ```
 
 
-A useful function is the `range` function. It let's you get a list of numbers.
-To see the values, we need to use the `list` function on the range:
+A useful function is the `range` function. It let's you get a sequence of
+numbers.  To see the values, we need to use the `list` function on the range:
 
 ```{data-language=python}
 list(range(5, 10))
@@ -242,5 +244,11 @@ structured.
 The structure of a program is referred to as "Syntax". It determines
 what is a comment, what is a function, what is a variable, a value,
 and indeed _every element_ of the program.
+
+```note
+A "comment" in programming is a line of code that the program 
+doesn't interpret. It can be used to document what is happening, 
+or the programmers thoughts at the moment they were typing.
+```
 
 In practice, keywords are words that we cannot use for variable names.
