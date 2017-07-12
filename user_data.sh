@@ -21,12 +21,10 @@ EOF
 
 sudo apt install -y unzip
 
+cd /home/ubuntu && git clone https://github.com/gacafe/vala_tc.git
+
 # Launch!
-cd /home/ubuntu/                                                            && \
-  mkdir notebooks                                                           && \
-  cd notebooks                                                              && \
-  wget -q http://files.grouplens.org/datasets/movielens/ml-latest-small.zip && \
-  unzip -j ml-latest-small.zip -d data && \
+cd /home/ubuntu/vala_tc/notebooks             && \
   jupyter notebook --ip 0.0.0.0 --port 8888
 LIFE
 
