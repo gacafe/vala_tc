@@ -251,4 +251,3 @@ doesn't interpret. It can be used to document what is happening,
 or the programmers thoughts at the moment they were typing.
 ```
 
-In practice, keywords are words that we cannot use for variable names.

@@ -16,18 +16,18 @@ We'll see later on that our main task today will be to investigate movie
 reviews; and this may involve many steps.
 
 Functions are a way of collecting together many steps of logic into a single
-statement. Much like how we would think of walking to the shops and buying
-apples as a "single thing", instead of all the individual steps that that
-would involve.
+statement, or "recipe". Much like how we would think of walking to the shops
+and buying apples as a "single thing", instead of all the individual steps
+that that would involve.
 
 
 ## User-Defined Functions
 
 To define a function we will use some keyswords for the first time.
 
-The `def` keyword let's us begin what we call a "function block", and
-the `return` keyword let's us set what we refer to as the "return value" of
-the function.
+The `def` keyword (short for "function definition") let's us begin
+what we call a "function block", and the `return` keyword let's us set what we
+refer to as the "return value" of the function.
 
 Let's take a look at an example:
 
@@ -281,7 +281,7 @@ to print only those things that start with the letter "d".
 Group Question 4 - Have you encountered a real-life version of
 a for loop? What is it?
 
-Take a few minutes to write a pseudo-code version of a for loop
+Take a few minutes to write a "pseudo-code" version of a for loop
 that solves this task:
 
 Example:
