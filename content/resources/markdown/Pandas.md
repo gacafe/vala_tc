@@ -110,7 +110,7 @@ data in each column is? Write your guesses down.
 ```
 
 ```note
-On Indicies
+On Indices
 
 An index is used by pandas to provide a unique identifier for 
 each row. If none is specified, Pandas will automatically insert 
@@ -249,12 +249,12 @@ for that movie and display it in the notebook!
 
 Hint: Here are two functions that will be handy:
 
-def toImdbFormat(imdbId):
+def to_imdb_format(imdbId):
     return "tt" + (("0" * 7) + str(imdbId))[-7:]
 
 def poster_image(imdbId):
     from IPython.display import Image
-    id_ = toImdbFormat(imdbId)
+    id_ = to_imdb_format(imdbId)
     title = imdb.get_title_by_id(id_)
     return Image(url=title.poster_url, width=200, height=200)
 </pre>
