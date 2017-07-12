@@ -6,6 +6,16 @@
 In this section we'll see our first Python Library. But before we get into
 that, we need first take a look at how libraries work!
 
+## Wordbank
+
+-----------       -----------------    --------------
+library           import               as
+ceil              math                 alias
+DataFrame         Series               head
+dtypes            multi-index          loc
+csv               sort_values          unique
+-----------       -----------------    --------------
+
 ## Libraries
 
 <center>
@@ -225,23 +235,25 @@ the `unique` function on the `scores` series.
 ```instruction
 (18) - Challenge - Merging DataFrames
 
-As it stands, the "ratings" DataFrame we only see the movieId, and not the
-name of the movie. If we were able to merge in the "movies" DataFrame, then
-we could see the ratings together with the movie name and other data.
+As it stands, the "ratings" DataFrame we only see the movieId, and 
+not the name of the movie. If we were able to merge in the "movies" 
+DataFrame, then we could see the ratings together with the movie name 
+and other data.
 
-Use the "merge" function on a DataFrame to merge "movies" into "ratings".
+Use the "merge" function on a DataFrame to merge "movies" into 
+"ratings".
 
-(18.1) - Extra Challenge - Can you find a way to only merge the movie name,
-and not the other columns.
+(18.1) - Extra Challenge - Can you find a way to only merge the 
+movie name, and not the other columns.
 ```
 
 <pre class="instruction">Exercise - (19) - Joint Exercises
 
 Later in the Tech Camp you will learn how to use APIs. IMDB has an API
-that is accessible via the library
-[ImdbPie](https://github.com/richardasaurus/imdb-pie).
+that is accessible via the library <a href="https://github.com/richardasaurus/imdb-pie">ImdbPie</a>.
 
-This can be used to get the movie poster for the movies in this data set.
+This can be used to get the movie poster for the movies in this data 
+set.
 
 If you feel comfortable with APIs, come back to this exercise and use
 the "imdbId" field from the "movies" data set to find the movie poster

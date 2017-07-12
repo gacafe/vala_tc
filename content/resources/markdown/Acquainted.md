@@ -12,9 +12,12 @@
 ## Wordbank
 
 -----------       -------------     ------------
-Variable          Value             Type
-Function          list              tuple
-String            int               float
+notebook          Value             Variable
+Type              operator          tuple
+list              integer           decimal
+function          print             Evaluate
+argument          String            range
+keyword           syntax
 -----------       -------------     ------------
 
 ```instruction
@@ -68,8 +71,8 @@ distance_to_wall = 1.25
 ```
 
 ```instruction
-(1) - Define these variables in your notebook, and fill in your
-own values.
+(1) - Define these variables in your notebook, and fill in 
+your own values.
 ```
 
 ```instruction
@@ -106,15 +109,15 @@ functions. We will see more of these in the next section.
 ```
 
 ```instruction
-(3) - Figure out the type of the variables defined in Exercises 
-1 and 2.
+(3) - Figure out the type of the variables defined in 
+Exercises 1 and 2.
 
 Bonus (3.1): 
 
 Redefine the variable assigned to your distance to the wall and make
 it into an integer: the `int` type in Python. (Reminder: Integers
-are whole numbers with no decimal places. I.e. 6, 1983, -123, but not -2.1
-or 1/2.)
+are whole numbers with no decimal places. I.e. 6, 1983, -123, but 
+not -2.1 or 1/2.)
 
 Bonus (3.2): 
 
@@ -219,8 +222,8 @@ print(fun)
 
 (6.1) - What can't be added together?
 
-Bonus - Can you guess some other operators that might exist? What do they 
-do on integers? And lists?
+Bonus - Can you guess some other operators that might exist? What do 
+they do on integers? And lists?
 ```
 
 ### Function Reference

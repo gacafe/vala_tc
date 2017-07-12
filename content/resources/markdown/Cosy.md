@@ -5,6 +5,19 @@
 
 ![](resources/images/cosy.jpg)
 
+## Wordbank
+
+-----------       -----------------    --------------
+logic             def                  return
+arguments         function body        block
+indentation       objects              elements
+split             replace              upper
+lower             join                 list slicing
+index             control structure    if
+else              for                  loop
+flow              logical operator     in
+-----------       -----------------    --------------
+
 We've seen how to define variables and assign values, and do a bit of basic
 manipulation of those variables.
 
@@ -204,8 +217,8 @@ else:
 ```
 
 ```instruction
-(10) - Run the code above. What happens? Can you put in a value
-that lets you pass?
+(10) - Run the code above. What happens? Can you put in a 
+value that lets you pass?
 
 (10.1) - What is the type of: "Learn Python" == quest
 ```
